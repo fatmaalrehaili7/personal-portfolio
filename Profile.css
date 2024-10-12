@@ -99,7 +99,7 @@ h2::after {
 }
 
 /* Responsive Media Queries */
-@media (min-width: 400px) {
+@media (min-width: 100px) {
     .hero-section {
         grid-template-columns: 1fr 1fr;
         text-align: left;
