@@ -3,19 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-        content="Portfolio of Fatma ALrehaili, showcasing projects, skills, and experiences in web development.">
-    <meta name="keywords" content="Software Developer, portfolio, projects, HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatma's Portfolio</title>
-
+    <meta name="description" content="Portfolio of a Software Engineer">
+    <meta name="keywords" content="Software Engineer, Full Stack Developer, Portfolio">
+    <title>Fatma Alrehaili - Software Engineer</title>
+    <link rel="stylesheet" href="Profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navigation Section -->
-    <nav>
-        <ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home">
+                <img src="images/logo.jpg" alt="Your Logo" class="logo-img">
+            </a>
+        </div>
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -24,103 +31,99 @@
         </ul>
     </nav>
 
-    <!-- Home/About Section -->
-    <section id="home">
-        <h1>Home</h1>
-        <p>Hello! I'm Fatma Alrehaili, a passionate software engineer with expertise in full-stack development.</p>
-        <img src="C:\Users\Fatma\Pictures\Fatma Logo.jpeg" alt="Profile Logo">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="animated-text">Hi, I'm <span>Fatma Alrehaili</span></h1>
+            <p class="hero-subtext">A Passionate <strong>Software Engineer</strong> Crafting Software Solutions.</p>
+            <a href="#projects" class="btn-primary">Explore My Work</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/profile1.jpg" alt="Profile Picture" class="profile-img">
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <article>
-            <h3>Project Title 1</h3>
-            <img src="[project-image1.jpg]" alt="Screenshot of Project 1">
-            <p>A brief description of Project 1, its features, and technologies used.</p>
-            <a href="[live-demo-url1]" target="_blank">Live Demo</a> | <a href="[github-url1]"
-                target="_blank">GitHub</a>
-        </article>
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/project1.jpg" alt="Project 1 Screenshot">
+                </div>
+                <h3>E-Commerce API Project</h3>
+                <p>This e-commerce API serves as the backend for managing users, products, orders, categories, and
+                    payments
+                    in an online retail platform. The technology used in this project includes ASP.NET, PostgreSQL,
+                    Thunder Client (testing), MVC Architecture, and the Repository Pattern.
+                </p>
+                <a href="https://ecommerce-api-ubyp.onrender.com" class="btn-secondary">Live Demo</a> |
+                <a href="https://github.com/fatmaalrehaili7/sda-3-onsite-backend-teamwork"
+                    class="btn-secondary">GitHub</a>
+            </div>
+        </div>
     </section>
 
     <!-- Skills Section -->
-<section id="skills">
-    <h2>Skills</h2>
-    <table border="1" cellpadding="10" cellspacing="0">
-        <thead>
-            <tr>
-                <th>Soft Skills</th>
-                <th>Technical Skills</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Communication</td>
-                <td>HTML5 & CSS3</td>
-            </tr>
-            <tr>
-                <td>Problem-solving</td>
-                <td>JavaScript & React</td>
-            </tr>
-            <tr>
-                <td>Teamwork</td>
-                <td>ASP.NET Core & C#</td>
-            </tr>
-            <tr>
-                <td>Adaptability</td>
-                <td>PostgreSQL & Entity Framework</td>
-            </tr>
-            <tr>
-                <td>Time Management</td>
-                <td>Git & Version Control</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-list">
+            <div class="skill-item">C#</div>
+            <div class="skill-item">Java</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">ASP.NET</div>
+            <div class="skill-item">React</div>
+            <div class="skill-item">PostgreSQL</div>
+        </div>
+    </section>
 
     <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <article>
-            <h3>Software Application C# Bootcamp</h3>
-            <p>Worked on full-stack development, handling various web applications using C# and ASP.NET Core.</p>
-        </article>
-        <article>
-            <h3>Intern at King Salman Medical City - Information Technology Department</h3>
-            <p>Provided timely technical support to hospital staff, resolving hardware and software issues promptly.
-            </p>
-        </article>
-
+    <section id="experience" class="experience-section">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <h3>Full-Stack Software Development C# Bootcamp</h3>
+                <p><i>Saudi Digital Academy & Integrify Academy</i>
+                    <br> Skills: C#, ASP.NET, SQL, JavaScript, HTML, CSS, LINQ, OOP principles, CRUD operations, API
+                    development, and Agile methodologies.
+                </p>
+            </div>
+            <div class="experience-card">
+                <h3>Internship - Information Technology Department</h3>
+                <p><i>King Salman Medical City</i>
+                    <br> ● Provided timely technical support to hospital staff, resolving hardware and software issues
+                    promptly.
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:[your-email]">Fattmma117@gmail.com</a></p>
-        <p>LinkedIn: <a href="[linkedin-url]" target="_blank">https://www.linkedin.com/in/fatma-alrehaily</a></p>
-        <form action="[form-action-url]" method="POST">
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Me</h2>
+        <p>If you want to connect, feel free to reach out via the form below!</p>
+        <form action="submit.php" method="POST" class="contact-form">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Fatma Alrehaili" required>
-
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Fattmma117@gmail.com" required>
-
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
             <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-
+            <input type="text" id="subject" name="subject" placeholder="Subject">
             <label for="message">Message:</label>
-            <textarea id="message" name="message"  required></textarea>
-
-            <button type="submit">Send Message</button>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
         </form>
     </section>
 
-
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Fatma Alrehaili. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Fatma Alrehaili. All rights reserved.</p>
+            <p>Contact:
+                <a href="mailto:Fattmma117@gmail.com">Fattmma117@gmail.com</a> |
+                <a href="https://www.linkedin.com/in/fatma-alrehaily" target="_blank">LinkedIn</a>
+            </p>
+        </div>
     </footer>
 
 </body>
